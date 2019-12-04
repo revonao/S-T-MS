@@ -1,0 +1,28 @@
+<nav class="navbar navbar-expand-lg fixed-top navbar-dark bg-dark">
+    <% if(locals.islogin) { %>
+        <a class="navbar-brand" href="/users" style="font-size: x-large">S&T-MS</a>
+    <% } else{ %>;
+    <a class="navbar-brand" href="/" style="font-size: x-large">S&T-MS</a>
+    <% } %>
+    <div class="container-fluid">
+        <div class="navbar-header">
+        </div>
+        <% if(locals.islogin) { %>
+            <form class="btn btn-outline-primary">
+                <a href="/home"> <img src="images/user_default.png" class="img-rounded" alt=""
+                                      style="height: 40px; width: 40px"/></a>
+                <a style="color: lightgray;user-select: none">
+                    &nbsp;<%= test %>
+                </a>
+                <a>
+                    <a class="btn" href="/logout" style="color: gray;font-family: Arial">退出</a>
+                </a>
+            </form>
+        <% } else{ %>;
+        <form class="navbar-form navbar-right">
+            <a href="/login"> <img src="images/user_default.png" class="img-rounded" alt=""
+                                   style="height: 40px; width: 40px"/></a>
+        </form>
+        <% } %>
+    </div>
+</nav>

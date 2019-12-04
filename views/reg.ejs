@@ -1,0 +1,63 @@
+<%- include header %>
+<%- include navbar %>
+<div class="container" style="margin-top: 80px">
+    <div class="col-md-8 offset-md-2">
+        <h1 style="text-align: center">注册</h1>
+        <hr/>
+        <form class="form-horizontal" role="form" method="post">
+            <div class="form-group">
+                <div class="imput-group input-group lg col-xs-4 col-xs-offset-4">
+                    <input type="text" class="form-control" id="username" name="username" placeholder="输入用户名" required>
+                </div>
+            </div>
+            <hr/>
+            <div class="form-group">
+                <div class="imput-group input-group lg col-xs-4 col-xs-offset-4">
+                    <hr/>
+                    <input type="password" class="form-control" id="password" name="password" placeholder="输入密码" required>
+                </div>
+            </div>
+            <hr/>
+            <div class="form-group">
+                <div class="imput-group input-group lg col-xs-4 col-xs-offset-4">
+                    <hr/>
+                    <input type="password" class="form-control" id="password2" name="password2" placeholder="确认密码" required>
+                </div>
+            </div>
+            <hr/>
+            <div class="form-group">
+                <div class="imput-group input-group lg col-xs-4 col-xs-offset-4">
+                    <hr/>
+                    <input type="email" class="form-control" id="email" name="email" placeholder="输入邮箱地址(选填)">
+                </div>
+            </div>
+            <hr/>
+            <div class="container">
+                <div class="row">
+                    <div class="form-group">
+                        <input type="text" class="form-control" id="latitude" name="latitude" placeholder="店铺纬度"
+                               required>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" class="form-control" id="longitude" name="longitude" placeholder="店铺经度"
+                               required>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" class="form-control" id="tipinput" name="tipinput" placeholder="搜索试试...">
+                    </div>
+                </div>
+            </div>
+            <div class="col-xs-4">
+                <div id="reg_map"></div>
+            </div>
+            <div class="form-group">
+                <hr/>
+                <button type="submit" class="btn btn-md btn-primary btn-block">注册</button>
+            </div>
+            <hr/>
+        </form>
+    </div>
+</div>
+</form>
+</div>
+<%- include footer %>
